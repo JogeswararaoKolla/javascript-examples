@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const numbers = [20, 29, 30, 07, 30, 24, 25, 19];
+      const fruits = ["Banana", "Orange", "Apple", "Pear"];
+      const fullname = Array.from("Sumarchitha Kolla");
+      const mixed = [
+        22,
+        "Apple",
+        true,
+        undefined,
+        null,
+        { a: 10, b: 20 },
+        new Date()
+      ];
+      document.write("Numbers array : " + numbers + "<br>");
+      numbers.push(250);
+      document.write("Numbers array After push() method : " + numbers + "<br>");
+      numbers.unshift(500);
+      document.write(
+        "Numbers array After unshift() method : " + numbers + "<br>"
+      );
+      numbers.sort();
+      document.write("Numbers array After sort() method : " + numbers + "<br>");
+      numbers.sort(function(arg1, arg2) {
+        return arg1 - arg2;
+      });
+      document.write(
+        "Numbers array After sort(function(arg1,arg2){ return arg1-arg2;}) method : " +
+          numbers +
+          "<br>"
+      );
+      numbers.sort(function(arg1, arg2) {
+        return arg2 - arg1;
+      });
+      document.write(
+        "Numbers array After sort(function(arg1,arg2){ return arg2-arg1;}) method : " +
+          numbers +
+          "<br>"
+      );
+
+      document.write("Fruits array : " + fruits + "<br>");
+      fruits.pop();
+      document.write("Fruits array  After pop() method : " + fruits + "<br>");
+      //sorting Arrays
+      fruits.sort();
+      document.write("Fruits array  After sort() method : " + fruits + "<br>");
+      document.write("Mixed  type array : " + mixed + "<br>");
+      document.write(
+        "Fullname from Array.from() method : " + fullname + "<br>"
+      );
+      fullname.reverse();
+      document.write("Fullname from reverse() method : " + fullname + "<br>");
+    </script>
+  </body>
+</html>
