@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function greet(firstname, lastname) {
+        return "Hello " + firstname + " " + lastname;
+      }
+      const square = function(element = 2) {
+        return element * element;
+      };
+      document.write(
+        "greet(firstname, lastname) function is : " +
+          greet("Jogeswararao", "Kolla") +
+          "<br>"
+      );
+
+      document.write(
+        "square() method with default element of 2 is : " + square() + "<br>"
+      );
+      document.write(
+        "square(5) method with default element of 2 is : " + square(5) + "<br>"
+      );
+    </script>
+  </body>
+</html>
