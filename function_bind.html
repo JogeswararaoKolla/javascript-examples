@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const obj1 = {
+        firstName: "Jogeswararao",
+        lastName: "Kolla"
+      };
+      const obj2 = {
+        firstName: "Sumarchitha",
+        lastName: "Kolla"
+      };
+      // `` is Javascript template literal
+      // fullName is function expression.
+      const fullName = function() {
+        return `${this.firstName},${this.lastName}`;
+      };
+      const obj1fullName = fullName.bind(obj1);
+      const obj2fullName = fullName.bind(obj2);
+      console.log(obj1fullName());
+      console.log(obj2fullName());
+    </script>
+  </body>
+</html>

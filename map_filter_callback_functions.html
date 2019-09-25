@@ -8,7 +8,7 @@
   </head>
   <body>
     <script type="text/javascript">
-      // 2. Map lets you loop over an array and modify the elements inside
+      // 1. Map lets you loop over an array and modify the elements inside
       var map = function(arr, cb) {
         var result = [];
         for (var index = 0; index < arr.length; index++) {
@@ -17,11 +17,9 @@
         }
         return result;
       };
-
       var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
       var doubled = map(numbers, function(element, index, arr) {
-        console.log(element, index, arr);
         return element * 2;
       });
 
@@ -30,7 +28,7 @@
 
       // --------------------------------------------------------------------------
 
-      // 3. filter lets you loop over an array and remove elements
+      // 2. filter lets you loop over an array and remove elements
       var filter = function(arr, cb) {
         var result = [];
         for (var index = 0; index < arr.length; index++) {
@@ -45,7 +43,6 @@
       var evenNumbers = filter(numbers, function(currentElement) {
         return currentElement % 2 === 0;
       });
-
       // Prints `[ 2, 4, 6, 8, 10 ]`
       console.log(evenNumbers);
     </script>
