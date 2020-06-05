@@ -1,3 +1,12 @@
+// Variables can be strings, numbers, or booleans (true / false)
+const firstname = "Jogi Kolla";
+const cnt = 7;
+const isSleeping = true;
+
+// The console.log() method is used to display data in the browser's console.
+// We can log strings, variables, and even equations.
+console.log("Demo");
+
 // when using var the variable i exits after the block scope.
 for (var i = 0; i < 5; i++) {
   console.log("Inside loop " + i);

@@ -6,3 +6,11 @@ const moviePatrons = [
 
 //forEach is functional way of iterating through an array without a for loop
 moviePatrons.forEach((patron) => console.log(patron));
+
+// Creating an array of vegetables.
+const vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+
+// Looping through each item in the array and logging a message to the console.
+for (let i = 0; i < vegetables.length; i++) {
+  console.log("I love " + vegetables[i]);
+}
