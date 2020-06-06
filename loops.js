@@ -14,3 +14,8 @@ const vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
 for (let i = 0; i < vegetables.length; i++) {
   console.log("I love " + vegetables[i]);
 }
+
+//The for-of-loop
+for (let vegetable of vegetables) {
+  console.log(vegetable);
+}
